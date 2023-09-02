@@ -1,5 +1,6 @@
 import style from './Sort.module.css'
 function Sort ({sortValue, changeSortValue, defaultValue, options}){
+    console.log()
     return(
         <select className = {style.select} onChange = {(e)=>changeSortValue(e.target.value)}> 
             <option className={style.option}disabled>{defaultValue}</option>
